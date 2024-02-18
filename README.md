@@ -15,9 +15,9 @@ It essentially merges all changes from feature to main while making the history 
 # git pull vs git fetch
 git pull downloads changes from remote repo to local repo and working directory. Changes can be seen immediately. Whereas git fetch only downloads the changes from remote repo to local repo, doesn't show changes in working directory. To get changes reflected at working directory , an additional git merge command is needed.
 
-# git merge main on other branches
+# Merging scenarios
 
-## Scenario 1 : Files changed on main is the same set of files changed on branch 
+## Scenario 1 : Files changed on main is not the same set of files changed on branch (no conflicts)
 By git pulling origin to main, then checking out to target branch and performing a git merge main, changes from main will be reflected on the new branch. User would have to commit and push the branch to show reflected changes on the new branch on the remote repo.
 
 ## Scenario 2 : Files changed on main matches the set of files changed on branch, merge main into branch first (EX: hello.txt is changed on both branch)
