@@ -1,4 +1,4 @@
-# Fast forward merge
+# Fast forward merge (https://www.youtube.com/watch?v=36ueMx5hro8)
 Suppose we have a master branch. I branched out master to create a new branch named feature. 
 I've made several commits to feature branch and I would like to merge the feature branch to master branch. 
 By default, if there are no changes in master branch , and I choose to merge feature branch into it, a fast forward approach will be used. 
