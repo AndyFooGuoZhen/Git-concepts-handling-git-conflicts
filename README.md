@@ -24,4 +24,4 @@ By git pulling origin to main, then checking out to target branch and performing
 By git pulling origin to main, then checking out to target branch and performing a git merge main, a conflict would occur. Resolve the conflict manually and do a commit and push changes to branch. Then we can merge the branch to main via a pull request, no conflicts should be present here since we resolved it when merging main to our branch.
 
 ## Scenario 3 : Files changed on main matches the set of files changed on branch, merge branch into main
-
+Directly making a pull request to merge firstBranch into main will cause a git conflict. After resolving the conflict and merging the firstBranch to main, the contents for main and firstBranch will be changed as well.
