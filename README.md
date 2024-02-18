@@ -20,4 +20,5 @@ git pull downloads changes from remote repo to local repo and working directory.
 ## Scenario 1 : Files changed on master is the same set of files changed on branch 
 By git pulling origin to main, then checking out to target branch and performing a git merge main, changes from main will be reflected on the new branch. User would have to commit and push the branch to show reflected changes on the new branch on the remote repo.
 
-## Scenario 2 : 
+## Scenario 2 : Files changed on master matches the set of files changed on branch (EX: hello.txt is changed on both branch)
+By git pulling origin to main, then checking out to target branch and performing a git merge main, a conflict would occur. Resolve the conflict manually and do a commit and push changes to branch.
