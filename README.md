@@ -38,4 +38,7 @@ Performs copy of commits for current branch, and moves copy of commits on top of
 ## Disadvantages
 1. Do not use rebase when having a branch that is shared by other developers as commits may be lost when doing rebase
 
+# Stashing
+Temporarily stashes changes on the side, allows developer to checkout to other branch without commiting changes. In Vscode source control tab, you can stash changes by clicking on the 3 dots and select stash untracked to stash items not added to git staging area. If the file is known by git (or added to staging area), you can use the stash option instead.
+
 
