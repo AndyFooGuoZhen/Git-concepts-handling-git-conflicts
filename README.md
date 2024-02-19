@@ -25,3 +25,15 @@ By git pulling origin to main, then checking out to target branch and performing
 
 ## Scenario 3 : Files changed on main matches the set of files changed on branch, merge branch into main
 Directly making a pull request to merge firstBranch into main will cause a git conflict. After resolving the conflict and merging the firstBranch to main, the contents for main and firstBranch will be changed as well.
+
+# Rebase
+Performs copy of commits for current branch, and moves copy of commits on top of target branch. EX: feature branch has 3 commits, and main branch has 1 new commit, in order to update our feature branch, we can 1) merge main into feature branch or 2) perform a rebase on our current branch. To do so, simply checkout to feature branch, and do the git rebase main command (make sure local main is updated). 
+
+## Advantages 
+1. less commits in branch since no merge is used
+2. Promotes the use of fast forward merges since rebase makes the curent branch updated
+
+## Disadvantages
+1. Do not use rebase when having a branch that is shared by other developers as commits may be lost when doing rebase
+
+
